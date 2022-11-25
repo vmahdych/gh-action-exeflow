@@ -28,7 +28,7 @@ jobs:
       - name: Cache dependencies
         id: cache
         uses: actions/cache@v3
-         with:
+        with:
           path: node-modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
@@ -52,7 +52,7 @@ jobs:
       - name: Cache dependencies
         id: cache
         uses: actions/cache@v3
-         with:
+        with:
           path: node-modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
